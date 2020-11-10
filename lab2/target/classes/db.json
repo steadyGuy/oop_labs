@@ -1,0 +1,76 @@
+{
+  "books": [
+    {
+      "author": "Джон Р. Р. Толкин",
+      "name": "Властелин колец",
+      "year": 1954,
+      "amountIssuance": 8000000
+    },
+    {
+      "author": "Джейн Остин",
+      "name": "Гордость и предубеждение",
+      "year": 1813,
+      "amountIssuance": 8000000
+    },
+    {
+      "author": "Дуглас Адамс",
+      "name": "Автостопом по галактике",
+      "year": 1979,
+      "amountIssuance": 8560004
+    },
+    {
+      "author": "Дуглас Адамс",
+      "name": "Ресторан в конце Вселенной",
+      "year": 1980,
+      "amountIssuance": 9520004
+    },
+    {
+      "author": "Дуглас Адамс",
+      "name": "Жизнь, Вселенная и всё остальное",
+      "year": 1982,
+      "amountIssuance": 3560002
+    },
+    {
+      "author": "unknown",
+      "name": "Слово о полку Игореве",
+      "year": 0,
+      "amountIssuance": 0
+    },
+    {
+      "author": "unknown",
+      "name": "Суд Шемякин",
+      "year": 0,
+      "amountIssuance": 0
+    },
+    {
+      "author": "Терри Пратчетт",
+      "name": "Ведьмы за границей",
+      "year": 1991,
+      "amountIssuance": 800000
+    },
+    {
+      "author": "Вирджиния Эндрюс",
+      "name": "Цветы на чердаке",
+      "year": 1979,
+      "amountIssuance": 795000
+    },
+    {
+      "author": "Ирвин Уэлш",
+      "name": "На игле",
+      "year": 1993,
+      "amountIssuance": 1250000
+    },
+    {
+      "author": "Вирджиния Эндрюс",
+      "name": "Приключения Оливера Твиста",
+      "year": 1839,
+      "amountIssuance": 5000000
+    },
+    {
+      "author": "Стивен Коэн",
+      "name": "Бухарин. Политическая биография",
+      "year": 1980,
+      "amountIssuance": 250000
+    }
+  ]
+}
