@@ -1,9 +1,16 @@
+/**
+ * Класс специализированного туристического набора (набор для пикников)
+ * Класс минимализированный.
+ * @author Сопронюк Юрій
+ * @version 1.0
+ */
 public class PicnicSet extends TouristSet {
     private int napkins;
     private int glasses;
     private int spoons;
 
     public PicnicSet(int napkins, int glasses, int spoons) {
+        super();
         this.napkins = napkins;
         this.glasses = glasses;
         this.spoons = spoons;
@@ -19,7 +26,7 @@ public class PicnicSet extends TouristSet {
     @Override
     public String getValuabilityOfSet() {
         return "Набор для пикника. \n" +
-                "Полный размер:" + (getSize() * getWeight()) + " единиц\n" +
+                "Полный размер: " + (getSize() * getWeight()) + " единиц\n" +
                 "Цена: " + getPrice() + " грн. \n" + "Стандарт: " + getStandard() + '\n' +
                 "Количество серветок: " + this.napkins +
                 " Количество стаканов: " + this.glasses +

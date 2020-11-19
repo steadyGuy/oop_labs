@@ -1,7 +1,12 @@
 import java.util.Map;
 
+/**
+ * Класс магазина тур-наборов.
+ * @author Сопронюк Юрій
+ * @version 1.0
+ */
 public class TravelSetStore implements SellableProducts {
-    private Map<TouristSet, Integer> sets;
+    private Map<TouristSet, Integer> sets; //агрегация
     private String name;
     private boolean saleability;
 
@@ -19,6 +24,10 @@ public class TravelSetStore implements SellableProducts {
         return sets.get(set);
     }
 
+    /**
+     * Процедура продажи товара из магазина по заданному набору
+     * @param tSet - набор, который нужно продать
+     */
     @Override
     public void sellSet(TouristSet tSet) {
         if (!saleability) {

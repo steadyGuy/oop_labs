@@ -12,9 +12,9 @@ public class Main {
         System.out.println(set1.getValuabilityOfSet() + '\n');
         System.out.println(set2.getValuabilityOfSet());
 
-        TravelSetStore store = new TravelSetStore(sets, "My own SUPER store");
+        TravelSetStore store = new TravelSetStore(sets, "My own SUPER store"); //передаем наши наборы магазину
         store.setSellable(true);
-        System.out.println("Магазин: " + store.getName());
+        System.out.println("\nМагазин: " + store.getName());
         System.out.println("Продает/Открыт: " + store.isSellable());
 
         System.out.println("Цена набора 1: " + store.getSetPrice(set1));

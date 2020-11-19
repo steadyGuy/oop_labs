@@ -1,3 +1,9 @@
+/**
+ * Абстрактный класс туристического набора, от которого будут наследоваться
+ * другие (специализированные) туристические наборы
+ * @author Сопронюк Юрій
+ * @version 1.0
+ */
 public abstract class TouristSet implements Standard {
 
     private int weight;
@@ -70,5 +76,10 @@ public abstract class TouristSet implements Standard {
     }
 
     //ценность каждого тур-набора (в виде описания)
+    /**
+     * Абстрактынй метод для получения значения ценности каждого тур-набора
+     * (в виде описания). Реализация в классах-наследниках
+     * @return возвращает описания набора
+     */
     public abstract String getValuabilityOfSet();
 }
