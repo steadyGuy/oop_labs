@@ -1,7 +1,4 @@
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.util.HashMap;
 
 public class Main {
@@ -14,8 +11,7 @@ public class Main {
         sets.put(set2, 10);
         TravelSetStore store = new TravelSetStore(sets, shop); //передаем наши наборы и информационный объект магазину
 
-        String filePath = "./src/main/resources/"+store.hashCode()+".bin";
-
+        String filePath = new File("").getAbsolutePath()+store.hashCode()+".bin";
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(filePath);
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
