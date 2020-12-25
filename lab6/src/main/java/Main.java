@@ -11,7 +11,8 @@ public class Main {
         sets.put(set2, 10);
         TravelSetStore store = new TravelSetStore(sets, shop); //передаем наши наборы и информационный объект магазину
 
-        String filePath = new File("").getAbsolutePath()+store.hashCode()+".bin";
+        String filePath = new File("").getAbsolutePath()+"/"+store.hashCode()+".bin";
+        System.out.println(filePath);
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(filePath);
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
