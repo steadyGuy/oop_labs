@@ -12,7 +12,6 @@ public class Main {
         TravelSetStore store = new TravelSetStore(sets, shop); //передаем наши наборы и информационный объект магазину
 
         String filePath = new File("").getAbsolutePath()+"/"+store.hashCode()+".bin";
-        System.out.println(filePath);
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(filePath);
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
@@ -20,7 +19,7 @@ public class Main {
             objectOutputStream.flush();
             objectOutputStream.close();
         } catch (Exception err) {
-            System.out.println(err);
+            System.out.println(err.getMessage());
             System.exit(500);
         }
 
@@ -32,7 +31,7 @@ public class Main {
             objectInputStream.close();
             System.out.println("Считанные данные: " + dataToRead);
         } catch (Exception err) {
-            System.out.println(err);
+            System.out.println(err.getMessage());
             System.exit(500);
         }
 
